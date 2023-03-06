@@ -16,6 +16,7 @@ namespace AdapterPatternSample.Controllers
             _analyticAdapter = analyticAdapter;
         }
        
+        [HttpGet]
         public IActionResult GenerateId()
         {
             var employees = _employeesService.GetEmployees();
